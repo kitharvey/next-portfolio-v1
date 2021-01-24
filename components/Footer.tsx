@@ -9,7 +9,7 @@ function Footer() {
                     <p>by</p>
                     <p>Kit Harvey Caubalejo</p>
                 </a>
-                <p className="bottom" >Built Next and deployed on Vercel</p>
+                <p className="bottom" >Built with Next and deployed on Vercel</p>
             </div>
         </footer>
     )
