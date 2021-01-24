@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, {
     useEffect, 
     useState
@@ -55,9 +56,17 @@ export default function Nav(){
 
                 <div className={`menu-container ${isOpen ? " open": ""}`} >
                     <div className="menu">
-                        <a className="nav-items" href="#home" onClick={onClickHandler} >Home</a>
-                        <a className="nav-items" href="#projects" onClick={onClickHandler}>Projects</a>
-                        <a className="nav-items" href="#about" onClick={onClickHandler}>About</a>
+                        <div className="nav-items" onClick={onClickHandler}>
+                            <Link href="/#home">Home</Link>
+                        </div>
+                        <div className="nav-items" onClick={onClickHandler}>
+                            <Link href="/#projects">Projects</Link>
+                        </div>
+                        <div className="nav-items" onClick={onClickHandler}>
+                            <Link href="/#about" >About</Link>
+                        </div>
+                       
+                       
                     </div>
                     <div className="port">
                         <h1>Kit Harvey Caubalejo</h1>
@@ -66,9 +75,11 @@ export default function Nav(){
                         <div className="links">
                             <a href="/resume.pdf" target="__blank">resume</a> 
                             <a href="https://github.com/kitharvey" target="__blank">github</a>
-                            <a href="mailto:kitharveycaubalejo@gmail.com" target="__blank" >email</a>
                             <a href="https://www.linkedin.com/in/kitharvey/" target="__blank" >linkedin</a>
                             <a href="https://twitter.com/kithrvy" target="__blank" >twitter</a>
+                        </div>
+                        <div  >
+                            <a href="mailto:kitharveycaubalejo@gmail.com" target="__blank" >kitharveycaubalejo@gmail.com</a>
                         </div>
                         <div className="theme" onClick={handleToggle} >{themeState} mode</div>
                     </div>

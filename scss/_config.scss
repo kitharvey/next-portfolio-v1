@@ -15,7 +15,13 @@
 }
 
 
-
+.light{
+    --bg-color:  #ffffff;
+    --bg-color-two:  #f5f8fa;
+    --text-color:  #14171A;
+    --a-color: #026aab;
+    --b-color: #026aab80;
+}
 
 
 body{
@@ -28,13 +34,7 @@ body{
     scroll-behavior: smooth;
     transition: background .25s ease, color .5s ease;
 
-    &.light{
-        --bg-color:  #ffffff;
-        --bg-color-two:  #f5f8fa;
-        --text-color:  #14171A;
-        --a-color: #026aab;
-        --b-color: #026aab80;
-    }
+    
     
     a{
         cursor: pointer;
@@ -60,7 +60,7 @@ body{
 
         .main-buttons{
             margin: 20px 0;
-            a{
+            p{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -68,6 +68,9 @@ body{
                 font-size: small;
                 text-transform: none;
                 font-family: 'Courier New', Courier, monospace;
+            }
+            .bottom{
+                margin-top: 10px;
             }
         }
     }

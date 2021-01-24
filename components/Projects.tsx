@@ -64,15 +64,21 @@ const Projects: React.FC = () => {
                     </div>
                         <div className = "video-container" >
                             <video
-                                src={project.vid}
-                                loop 
+                                className="video"
+                                loop
                                 onMouseOver={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>
                                     event.currentTarget.play()
                                 }
                                 onMouseOut={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>
                                     event.currentTarget.pause()
                                 }
-                            />
+                            >
+                                 <source 
+                                 src={project.vid}
+                                 type="video/mp4"
+                                 />
+
+                            </video>
                         </div>
                         
                 </div>
