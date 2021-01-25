@@ -35,7 +35,6 @@ body{
     transition: background .25s ease, color .5s ease;
 
     
-    
     a{
         cursor: pointer;
         text-decoration: none;
@@ -68,9 +67,11 @@ body{
                 font-size: small;
                 text-transform: none;
                 font-family: 'Courier New', Courier, monospace;
+                text-align: center;
             }
             .bottom{
                 margin-top: 10px;
+                text-align: center;
             }
         }
     }

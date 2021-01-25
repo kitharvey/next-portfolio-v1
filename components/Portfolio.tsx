@@ -4,15 +4,17 @@ import Home from './Home'
 import Projects from './Projects'
 import About from './About'
 import Footer from './Footer'
+import Contact from './Contact'
 
 export default function Portfolio() {
     
     return (
         <div className="wrapper" > 
-            <Nav></Nav>
-            <Home></Home>
-            <Projects></Projects>
-            <About></About>
+            <Nav/>
+            <Home/>
+            <Projects/>
+            <About/>
+            <Contact />
             <Footer />
         </div>
         

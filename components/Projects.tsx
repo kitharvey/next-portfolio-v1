@@ -64,6 +64,7 @@ const Projects: React.FC = () => {
                     </div>
                         <div className = "video-container" >
                             <video
+                                preload="metadata"
                                 className="video"
                                 loop
                                 onMouseOver={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>

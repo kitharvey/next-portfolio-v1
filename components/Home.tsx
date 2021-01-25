@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 // import resume from "../../images/resume.pdf"
 
@@ -14,7 +15,7 @@ export default function Home(){
                 <a href="/resume.pdf" target="__blank">view resume</a> 
             </div>
             <div className="main-buttons">
-                <a href="mailto:kitharveycaubalejo@gmail.com" target="__blank" >get in touch</a>
+                <Link href="/#get-in-touch">get in touch</Link>
             </div>
         </div>
     </div>

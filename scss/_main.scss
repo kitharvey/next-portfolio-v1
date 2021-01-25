@@ -68,15 +68,17 @@
             position: relative;
             z-index: 0;
             padding: 20px 0;
-            padding-right: 20px;
             
             transition: all .25s ease-in-out;;
             &:hover{
                 background: var(--bg-color-two);
-                padding-left: 20px;
+                padding: 20px;
             }
             .details{
                 .tools{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
                     font-size: .8rem;
                     font-weight: 100;
                     small{

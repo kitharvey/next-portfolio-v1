@@ -1,0 +1,84 @@
+.sign-in-form-main{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: max-content;
+    padding: 0 20%;
+
+    .contact-form-container{
+        margin-top: 40px;
+        width: 100%;
+
+        .sign-in-inputs{
+            width: inherit;
+            border: 1px solid var(--a-color);;
+            font-size: 14px;
+            padding: 15px;
+            outline: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            background: none;
+            color: currentColor;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0px 0px var(--b-color);
+            transition: all .15s ease-in-out;
+            &:focus{
+                box-shadow: 0px 0px 0px 0px var(--b-color);
+                transform: translateX(5px) translateY(5px);
+            }
+    
+            &::placeholder {
+                font-weight: medium;
+            }
+            &:placeholder-shown {
+                font-weight: medium;
+            }
+    
+            
+        }
+    
+        .form-error{
+            margin: 5px 0;
+            font-weight: normal;
+            color: tomato;
+            font-size: 12px;
+            height: 16px;
+            p{
+                margin: 0;
+                text-transform: none;
+            }
+        }
+    
+        .sign-in-form-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+    
+            .sign-in-submit{
+                margin-left: auto;
+                background: var(--a-color);
+                color: #ffffff;
+                border: none;
+                outline: none;
+                padding: 10px 30px;
+                font-family: 'oswald', sans-serif;
+                font-weight: 500;
+                font-size: 1rem;
+                text-transform: uppercase;
+                border-radius: 5px;
+                box-shadow: 5px 5px 0px 0px var(--b-color);
+                cursor: pointer;
+                transition: all .15s ease-in-out;
+                &:hover{
+                    box-shadow: 0px 0px 0px 0px var(--b-color);
+                    transform: translateX(5px) translateY(5px);
+                }
+            }
+        }
+    }
+
+    textarea { resize: vertical; }
+
+}
