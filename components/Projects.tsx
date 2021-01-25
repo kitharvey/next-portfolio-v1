@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import poke from '../../public/poke-decks.mp4'
 // import path from '/pathfinder.mp4'
 // import fx from '/fx.mp4'
@@ -40,7 +40,7 @@ const projects = [
 ]
 
 const Projects: React.FC = () => {   
-
+    const [isPlaying, setIsPlaying] = useState<boolean>(false);
     return(
         <div id="projects">
             <p className="uppercase-text">projects</p>
@@ -73,6 +73,17 @@ const Projects: React.FC = () => {
                                 onMouseOut={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>
                                     event.currentTarget.pause()
                                 }
+
+                                onClick={(e: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
+                                    if (isPlaying) {
+                                      setIsPlaying(false);
+                                      e.currentTarget.pause();
+                                    } else {
+                                      setIsPlaying(true);
+                                      e.currentTarget.play();
+                                    }
+                                  }}
+                                
                             >
                                  <source 
                                  src={project.vid}
