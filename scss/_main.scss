@@ -67,14 +67,17 @@
             width: 100%;
             position: relative;
             z-index: 0;
-            padding: 20px 0;
+            padding: 20px;
             
             transition: all .25s ease-in-out;;
             &:hover{
                 background: var(--bg-color-two);
-                padding: 20px;
+                .video-container{
+                    filter: grayscale(0);
+                }
             }
             .details{
+                width: 50%;
                 .tools{
                     display: flex;
                     flex-wrap: wrap;
@@ -106,16 +109,14 @@
             }
 
             .video-container{
-                
+                width: 50%;
                 transition: all .25s ease-in-out;
                 animation: fadeIn .5s ease-in-out;
                 filter: grayscale(1);
-                &:hover{
-                    filter: grayscale(0);
-                }
 
-                video{
-                    width: 500px;
+
+                .video{
+                    width: 100%;
                 }
             }
         }

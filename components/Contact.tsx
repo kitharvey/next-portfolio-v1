@@ -9,16 +9,6 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({}) => {
-    // const submitHandler = (event: any) => {
-    //     event.preventDefault()
-    //     console.log(event.target )
-    //     // emailjs.sendForm('service_brvh3kh', 'template_7k881xs', event.target, 'user_avuoOUOCaAy7kZB3KZqmb')
-    //     //                     .then((result) => {
-    //     //                         console.log(result.text);
-    //     //                     }, (error) => {
-    //     //                         console.log(error.text);
-    //     //                     });
-    // }
         return (
             <Formik
                         initialValues = {{
@@ -58,7 +48,7 @@ const Contact: React.FC<ContactProps> = ({}) => {
                             }}
                         >
                         {({ errors, touched, setFieldValue }) => (
-                            <div className='sign-in-form-main' id="get-in-touch">
+                            <div className='sign-in-form-main' id="contact">
                                 <p className="uppercase-text">get in touch</p>
                                 <Form className="contact-form-container" id="contact-form"  >
                                     <Field

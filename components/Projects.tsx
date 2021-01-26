@@ -1,7 +1,4 @@
 import React, {useState} from 'react'
-// import poke from '../../public/poke-decks.mp4'
-// import path from '/pathfinder.mp4'
-// import fx from '/fx.mp4'
 
 const projects = [
     {
@@ -15,7 +12,8 @@ const projects = [
                 "react-query"],
         repo: 'https://github.com/kitharvey/poke-decks',
         demo: 'https://kitharvey.github.io/poke-decks/#/',
-        vid: '/poke-decks.mp4'
+        gif: '/pokemon.gif',
+        gifPause: './pokemon-pause.gif'
     },
     {
         title: 'Pathfinder',
@@ -25,7 +23,8 @@ const projects = [
                 "scss"],
         repo: 'https://github.com/kitharvey/Pathfinder',
         demo: 'https://kitharvey.github.io/Pathfinder/',
-        vid: '/pathfinder.mp4'
+        gif: '/pathfinder.gif',
+        gifPause: './pathfinder-pause.gif'
     },
     {
         title: 'FX Daily Forecast',
@@ -35,18 +34,19 @@ const projects = [
                 "fcsapi"],
         repo: 'https://github.com/kitharvey/fx-daily-forecast',
         demo: 'https://kitharvey.github.io/fx-daily-forecast/',
-        vid: '/fx.mp4'
+        gif: '/fx.gif',
+        gifPause: './fx-pause.gif'
     },
 ]
 
-const Projects: React.FC = () => {   
-    const [isPlaying, setIsPlaying] = useState<boolean>(false);
+const Projects: React.FC = () => {
+    const [isPlaying, setIsPlaying] = useState<number | null>(null)
     return(
         <div id="projects">
             <p className="uppercase-text">projects</p>
             <div className="proj-wrapper">
                 {projects.map( (project, index) => (
-                <div key={index} className="proj" >
+                <div key={index} className="proj" onMouseOut={() => setIsPlaying(null)} onMouseOver={() => setIsPlaying(index)} >
                     <div className = "details">
                         <h1>{project.title}</h1>
                         <div className="subtitles" >
@@ -63,34 +63,10 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
                         <div className = "video-container" >
-                            <video
-                                preload="metadata"
+                            <img
                                 className="video"
-                                loop
-                                onMouseOver={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>
-                                    event.currentTarget.play()
-                                }
-                                onMouseOut={ (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) =>
-                                    event.currentTarget.pause()
-                                }
-
-                                onClick={(e: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
-                                    if (isPlaying) {
-                                      setIsPlaying(false);
-                                      e.currentTarget.pause();
-                                    } else {
-                                      setIsPlaying(true);
-                                      e.currentTarget.play();
-                                    }
-                                  }}
-                                
-                            >
-                                 <source 
-                                 src={project.vid}
-                                 type="video/mp4"
-                                 />
-
-                            </video>
+                                src={isPlaying === index ? project.gif : project.gifPause}
+                            />
                         </div>
                         
                 </div>
