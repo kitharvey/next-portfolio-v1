@@ -36,6 +36,12 @@
     
             
         }
+        .recaptcha{
+            width: 100%;
+            .rc-anchor-normal .rc-anchor-content{
+                width: max-content;
+            }
+        }
     
         .form-error{
             margin: 5px 0;
@@ -81,4 +87,11 @@
 
     textarea { resize: vertical; }
 
+}
+
+
+@media  (max-width: 800px){
+    .sign-in-form-main{
+        padding: 0 10%;
+    }
 }

@@ -193,7 +193,9 @@
                 align-items: flex-start;
                 flex-direction: column;
                 padding: 0;
-
+                .details{
+                    width: 100%;
+                }
                 .video-container{
                     width: 100%;
                     video{

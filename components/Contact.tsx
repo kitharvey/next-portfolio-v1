@@ -89,6 +89,7 @@ const Contact: React.FC = () => {
                                     </div>
 
                                     <FastField
+                                        className="recaptcha"
                                         component={Recaptcha}
                                         sitekey="6Le0lzsaAAAAAKwnM9LPSUAbMluQyKR7C5qIyu1q"
                                         name="recaptcha"
