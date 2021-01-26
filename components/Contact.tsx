@@ -4,11 +4,8 @@ import * as Yup from 'yup'
 import emailjs from 'emailjs-com'
 import Recaptcha from 'react-google-recaptcha';
 
-interface ContactProps {
 
-}
-
-const Contact: React.FC<ContactProps> = ({}) => {
+const Contact: React.FC = () => {
         return (
             <Formik
                         initialValues = {{
