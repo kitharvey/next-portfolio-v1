@@ -7,7 +7,7 @@ import Footer from './Footer'
 import Contact from './Contact'
 
 export default function Portfolio() {
-    
+
     return (
         <div className="wrapper" > 
             <Nav/>

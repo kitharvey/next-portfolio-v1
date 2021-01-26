@@ -1,4 +1,5 @@
-.menu-container{
+.mobile-menu-container{
+    display: none;
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -14,7 +15,6 @@
         clip-path: circle(150% at 100% -10%);
     }
 
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
@@ -24,36 +24,16 @@
         height: 100vh;
         width: 50%;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 2rem;
         font-weight: 700;
     }
+}
 
-    .port{
-        padding: 5%;
-        height: 100vh;
-        width: 50%;
+@media  (max-width: 800px){
+    .mobile-menu-container{
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        .links{
-            margin-top: 20px;
-            a{
-                margin-right: 10px;
-            }
-        }
-
-        .theme{
-            cursor: pointer;
-            margin-top: 20px;
-            font-size: 1rem;
-            color: currentColor;
-            &:hover{
-                color: var(--a-color);
-            }
-        }
     }
 }

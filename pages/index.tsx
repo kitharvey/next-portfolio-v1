@@ -1,7 +1,7 @@
-import MyApp from './_app'
+// import MyApp from './_app'
 
 const IndexPage = () => (
-    <MyApp />
+    <div />
 )
 
 export default IndexPage

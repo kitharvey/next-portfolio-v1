@@ -1,33 +1,10 @@
 import Link from 'next/link';
-import React, {
-    useEffect, 
-    useState
-} from 'react'
+import React, {useState} from 'react'
 
 
 export default function Nav(){
     const [ isOpen, setOpener ] = useState(false);
     
-    const [themeState, setThemeState] = useState('')
-
-    useEffect(() => {
-
-        if (typeof window !== "undefined") {
-            const theme = localStorage.getItem('theme')
-            setThemeState(theme ? theme : 'light')
-            document.body.classList.add(theme ? theme : 'light')
-        }
-    },[])
-
-    useEffect(() => {
-        themeState === 'light' ? document.body.classList.replace('light', 'dark') : document.body.classList.replace('dark', 'light')
-        themeState === 'light' ? localStorage.setItem('theme', 'light') : localStorage.setItem('theme', 'dark')
-    },[themeState])
-
-    const handleToggle = () => {
-        themeState === 'light' ? setThemeState('dark') : setThemeState('light')
-    }
-
     const onClickHandler = (event: React.MouseEvent<HTMLAnchorElement | HTMLDivElement, MouseEvent>) => {
         event.preventDefault()
         setOpener(!isOpen)
@@ -50,11 +27,26 @@ export default function Nav(){
                     </Link>
                 </div>
 
+                <div className="web-menu">
+                    <div className="nav-items" onClick={onClickHandler}>
+                        <Link href="/#home">Home</Link>
+                    </div>
+                    <div className="nav-items" onClick={onClickHandler}>
+                        <Link href="/#projects">Projects</Link>
+                    </div>
+                    <div className="nav-items" onClick={onClickHandler}>
+                        <Link href="/#about" >About</Link>
+                    </div>
+                    <div className="nav-items" onClick={onClickHandler}>
+                        <Link href="/#contact" >Contact</Link>
+                    </div>
+                </div>
+
                 <div className="burger " onClick={onClickHandler}>
                     <span className= {`line ${isOpen ? " open": ""}`} ></span>
                 </div>
 
-                <div className={`menu-container ${isOpen ? " open": ""}`} >
+                <div className={`mobile-menu-container ${isOpen ? " open": ""}`} >
                     <div className="menu">
                         <div className="nav-items" onClick={onClickHandler}>
                             <Link href="/#home">Home</Link>
@@ -68,25 +60,7 @@ export default function Nav(){
                         <div className="nav-items" onClick={onClickHandler}>
                             <Link href="/#contact" >Contact</Link>
                         </div>
-                       
-                       
-                    </div>
-                    <div className="port">
-                        <h1>Kit Harvey Caubalejo</h1>
-                        <p>Front-End Web Developer</p>
-                        <p>Portfolio</p>
-                        <div className="links">
-                            <a href="/resume.pdf" target="__blank">resume</a> 
-                            <a href="https://github.com/kitharvey" target="__blank">github</a>
-                            <a href="https://www.linkedin.com/in/kitharvey/" target="__blank" >linkedin</a>
-                            <a href="https://twitter.com/kithrvy" target="__blank" >twitter</a>
-                        </div>
-                        <div  >
-                            <a href="mailto:kitharveycaubalejo@gmail.com" target="__blank" >kitharveycaubalejo@gmail.com</a>
-                        </div>
-                        <div className="theme" onClick={handleToggle} >{themeState} mode</div>
-                    </div>
-                    
+                    </div>                   
                 </div>
                 
             </div>

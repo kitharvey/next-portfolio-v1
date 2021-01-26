@@ -1,39 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.dark{
+
+
+
+
+
+body{
+    font-family: var(--default-font);
+    background: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    transition: background .25s ease, color .5s ease;
+
     --bg-color:  #14171A;
     --bg-color-two:  #192734;
     --text-color:  #ffffff;
     --a-color: #1DA1F2;
     --b-color: #1DA1F280;
-}
-
-
-.light{
-    --bg-color:  #ffffff;
-    --bg-color-two:  #f5f8fa;
-    --text-color:  #14171A;
-    --a-color: #026aab;
-    --b-color: #026aab80;
-}
-
-
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Oswald', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    text-transform: uppercase;
-    background: var(--bg-color);
-    color: var(--text-color);
-    scroll-behavior: smooth;
-    transition: background .25s ease, color .5s ease;
-
+    --mono-font: 'Roboto Mono', monospace;
+    --default-font: 'Oswald', sans-serif;
     
     a{
         cursor: pointer;
@@ -47,6 +39,11 @@ body{
 
     h1{
         color: var(--a-color);
+    }
+
+    .wrapper{
+        width: 100%;
+        scroll-behavior: smooth;
     }
 
     footer{
@@ -66,7 +63,7 @@ body{
                 justify-content: center;
                 font-size: small;
                 text-transform: none;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: var(--mono-font);
                 text-align: center;
             }
             .bottom{
@@ -76,9 +73,6 @@ body{
         }
     }
 
-    .uppercase-text{
-        text-transform: uppercase;
-    }
 
     &::-webkit-scrollbar{
         display: none;

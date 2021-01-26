@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                         >
                         {({ errors, touched, setFieldValue }) => (
                             <div className='sign-in-form-main' id="contact">
-                                <p className="uppercase-text">get in touch</p>
+                                <p className="uppercase-text">Contact</p>
                                 <Form className="contact-form-container" id="contact-form"  >
                                     <Field
                                         className="sign-in-inputs"

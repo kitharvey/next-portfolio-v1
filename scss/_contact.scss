@@ -1,8 +1,11 @@
 .sign-in-form-main{
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     width: auto;
     height: max-content;
+    min-height: 100vh;
     padding: 0 20%;
 
     .contact-form-container{
@@ -92,6 +95,6 @@
 
 @media  (max-width: 800px){
     .sign-in-form-main{
-        padding: 0 10%;
+        padding: 0 20px;
     }
 }
