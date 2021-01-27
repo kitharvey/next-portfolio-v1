@@ -1,3 +1,15 @@
+.home-container{
+    width: 100%;
+    height: max-content;
+    position: relative;
+
+    .avatar-container{
+        position: absolute;
+        right: 30%;
+        top: 30%;
+    }
+}
+
 #home{
     .main-text{
         padding: 50px 0;    
