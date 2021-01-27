@@ -66,6 +66,7 @@ const Projects: React.FC = () => {
                             <img
                                 className="video"
                                 src={isPlaying === index ? project.gif : project.gifPause}
+                                alt={project.title}
                             />
                         </div>
                         

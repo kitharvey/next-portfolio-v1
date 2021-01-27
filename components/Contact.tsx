@@ -48,10 +48,12 @@ const Contact: React.FC = () => {
                             <div className='sign-in-form-main' id="contact">
                                 <p className="uppercase-text">Contact</p>
                                 <Form className="contact-form-container" id="contact-form"  >
+                                    <label htmlFor="fromName">Name:</label>
                                     <Field
                                         className="sign-in-inputs"
                                         type = 'text'
                                         name = 'fromName'
+                                        id = 'fromName'
                                         placeholder = 'Name *'
                                         style={{
                                             borderColor: errors.fromName && touched.fromName ? 'tomato' : ' #999999'
@@ -60,11 +62,12 @@ const Contact: React.FC = () => {
                                     <div className="form-error" >
                                         <ErrorMessage name="fromName" component="p"/>
                                     </div>
-                                    
+                                    <label htmlFor="fromEmail">Email:</label>
                                     <Field
                                         className="sign-in-inputs"
                                         type = 'email'
                                         name = 'fromEmail'
+                                        id = 'fromEmail'
                                         placeholder = 'Email *'
                                         style={{
                                             borderColor: errors.fromEmail && touched.fromEmail ? 'tomato' : ' #999999'
@@ -73,12 +76,13 @@ const Contact: React.FC = () => {
                                     <div className="form-error" >
                                         <ErrorMessage name="fromEmail" component="p"/>
                                     </div>
-                                    
+                                    <label htmlFor="fromMessage">Message:</label>
                                     <Field
                                         as="textarea"
                                         className="sign-in-inputs"
                                         type = 'text'
                                         name = 'fromMessage'
+                                        id = 'fromMessage'
                                         placeholder = 'Message *'
                                         style={{
                                             borderColor: errors.fromMessage && touched.fromMessage ? 'tomato' : ' #999999'
