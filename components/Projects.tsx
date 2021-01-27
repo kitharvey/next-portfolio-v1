@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 const projects = [
     {
         title: 'Pokédecks',
-        description: 'A pokédex in card style.',
+        description: 'A pokédex in card style. Swipe through random pokemon cards and view their stats, bio and information.',
         tools: ["React",
                 "TypeScript",
                 "TailwindCSS",
@@ -17,7 +17,7 @@ const projects = [
     },
     {
         title: 'Pathfinder',
-        description: 'A* search algorithm visualizer.',
+        description: 'A* search algorithm in action. A* search arguably the best pathfinding algorithm; uses heuristics to guarantee the shortest path much faster than Dijkstra.',
         tools: ["HTML",
                 "JavaScript",
                 "Sass"],
@@ -29,7 +29,7 @@ const projects = [
     {
         title: 'FX Daily Forecast',
         description: 'Foreign exchange daily chart, signal and lastest price. All data were fetched from https://fcsapi.com/ and displayed by using react app.',
-        tools: ["Teact",
+        tools: ["React",
                 "Sass",
                 "FCSAPI"],
         repo: 'https://github.com/kitharvey/fx-daily-forecast',
@@ -48,7 +48,7 @@ const Projects: React.FC = () => {
                 {projects.map( (project, index) => (
                 <div key={index} className="proj" onMouseOut={() => setIsPlaying(null)} onMouseOver={() => setIsPlaying(index)} >
                     <div className = "details">
-                        <h1>{project.title}</h1>
+                        <h2>{project.title}</h2>
                         <div className="subtitles" >
                             <small className="description" >{project.description}</small>
                         </div>

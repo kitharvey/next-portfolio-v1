@@ -26,7 +26,7 @@ export default function About(){
                             <li>Node.js</li>
                             <li>Photoshop</li>
                             <li>Illustrator</li>
-                            <li>git</li>
+                            <li>Git</li>
                         </ul>
                     </div>            
                 </div>
