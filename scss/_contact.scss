@@ -1,15 +1,36 @@
+#contact{
+
+    .email{
+        margin-top: 30px;
+        a{
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    }
+
+    .accounts{
+        margin-top: 30px;
+
+        .links{
+            a{
+                margin-right: 20px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}
 .sign-in-form-main{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     height: max-content;
-    min-height: 100vh;
-    padding: 0 20%;
 
     .contact-form-container{
-        margin-top: 40px;
+        margin-top: 10px;
         width: 100%;
 
         .sign-in-inputs{

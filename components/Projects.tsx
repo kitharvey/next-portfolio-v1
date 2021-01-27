@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState<number | null>(null)
     return(
         <div id="projects">
-            <p className="uppercase-text">Projects</p>
+            <p className="title-section">Projects</p>
             <div className="proj-wrapper">
                 {projects.map( (project, index) => (
                 <div key={index} className="proj" onMouseOut={() => setIsPlaying(null)} onMouseOver={() => setIsPlaying(index)} >

@@ -4,7 +4,7 @@ export default function About(){
 
     return (
         <div id="about">
-            <p className="uppercase-text">About Me</p>
+            <p className="title-section">About Me</p>
             <div className="about-container">
                 <div className="about-details">
                     <div className="overview">

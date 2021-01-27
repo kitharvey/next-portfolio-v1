@@ -1,28 +1,10 @@
-
-
-#home, #projects, #about{
-    min-height: 100vh;
-    height: max-content;
-    width: 100%;
-    padding: 0 20%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+#home{
     .main-text{
-        padding: 50px 0;
+        padding: 50px 0;    
+        .des{
+            font-size: 1.2rem;
+        }
     }
-
-    h1{
-        font-size: 4rem;
-       
-    }
-
-    .greet, .des{
-        text-transform: none;
-        font-size: 1.2rem;
-    }
-
 
     .main-buttons-container{
         display: flex;
@@ -30,12 +12,14 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         width: 100%;
+        height: max-content;
         
         .main-buttons{
             cursor: pointer;
             margin-right: 20px;
             margin-top: 20px;
             transition: all .15s ease-in-out;
+            height: max-content;
             a{
                 color: #ffffff;
                 padding: 10px 20px;
@@ -54,8 +38,9 @@
         }
 
     }
+}
 
-   
+#about{
 
     .about-container{
         margin-top: 40px;
@@ -101,6 +86,24 @@
             }
         }
         
+    }
+
+}
+
+
+#home, #projects, #about, #contact{
+    min-height: 100vh;
+    height: max-content;
+    width: 100%;
+    padding: 0 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    h1{
+        font-size: 4rem;
+       
     }
 
 }

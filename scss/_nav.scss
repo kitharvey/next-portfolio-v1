@@ -1,11 +1,12 @@
 .header{
     position: sticky;
+    padding-top: 20px;
     width: 100%;
     top: 0;
     height: 3rem;
     z-index: 10;
     .nav{
-        padding: 0 20%;
+        padding: 0 50px;
         width: inherit;
         display: flex;
         flex-direction: row;
