@@ -11,8 +11,10 @@
 }
 
 #home{
+    
     .main-text{
-        padding: 50px 0;    
+        padding: 50px 0;
+        width: 50%;
         .des{
             font-size: 1.2rem;
         }
@@ -132,6 +134,19 @@
 
 
 @media  (max-width: 800px){
+    .home-container{   
+        .avatar-container{
+            display: none;
+        }
+    }
+    
+    #home{
+    
+        .main-text{
+            width: 100%;
+        }
+    }
+
     #home, #projects, #about{
         padding: 0 20px;
         .proj-wrapper{
