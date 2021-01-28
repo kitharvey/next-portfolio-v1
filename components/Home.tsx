@@ -30,7 +30,7 @@ export default function Home(){
             <div id="home">
                 <div className="main-text">
                     <h1 className="name">I'm Kit Harvey.</h1>
-                    <p className="des">I'm a self-taught front-end web developer. <br/>I help clients and companies build their web user interface by using React, TypeScript and Sass.</p>
+                    <p className="des">I'm a self-taught front-end developer. <br/>I help clients and companies build their web user interfaces using React, TypeScript and Sass.</p>
                 </div>
                 <div className="main-buttons-container">
                     <div className="main-buttons">

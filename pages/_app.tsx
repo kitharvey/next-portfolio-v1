@@ -15,7 +15,7 @@ export default function MyApp() {
             <meta name="title" content="Kit Harvey" />
             <meta
               name="description"
-              content="I'm a self-taught front-end web developer. I help clients and companies build their web user interface by using React, TypeScript and Sass."
+              content="I'm a self-taught front-end developer. I help clients and companies build their web user interfaces using React, TypeScript and Sass."
             />
         </Head>
         <Portfolio/>
