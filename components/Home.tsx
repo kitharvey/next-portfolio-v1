@@ -34,7 +34,7 @@ export default function Home(){
                 </div>
                 <div className="main-buttons-container">
                     <div className="main-buttons">
-                        <a href="/resume.pdf" target="__blank">View Resume</a> 
+                        <a href="/CV_Caubalejo_Kit_Harvey.pdf" target="__blank">View Resume</a> 
                     </div>
                     <div className="main-buttons">
                         <Link href="/#contact">Hire Me</Link>
