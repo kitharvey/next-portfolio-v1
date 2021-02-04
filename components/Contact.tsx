@@ -41,21 +41,19 @@ const Contact: React.FC = () => {
                     recaptcha: Yup.string().required('Robots are not welcome yet!'),
                 })}
                 onSubmit ={(values, { setSubmitting, resetForm, setFieldValue }) => {
-                    const data = JSON.stringify(values, null, 2)
                     emailjs.sendForm('service_brvh3kh', 'template_7k881xs', "contact-form", 'user_avuoOUOCaAy7kZB3KZqmb')
-                    .then((result) => {
-                        console.log(result.text);
+                    .then(() => {
                         setSubmitting(false);
                         setFieldValue('success', true);
-                        setTimeout(() => resetForm(), 6000);
+                        resetForm();
                     }, (error) => {
                         setSubmitting(false);
                         setFieldValue('success', false);
-                        alert('Something went wrong, please try again!') // eslint-disable-line
+                        alert('Something went wrong, please try again!')
                         console.log(error.text);
                     });
 
-                    console.log(data )
+                    alert(values.fromName + ' successfully sent an email.')
                     }}
                 >
                 {({ errors, touched, setFieldValue }) => (
