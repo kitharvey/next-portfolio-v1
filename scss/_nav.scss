@@ -1,9 +1,10 @@
 .header{
     position: sticky;
-    padding-top: 20px;
+    padding: 10px 0;
     width: 100%;
     top: 0;
-    height: 3rem;
+    min-height: 3rem;
+    height: max-content;
     z-index: 10;
     .nav{
         padding: 0 50px;
@@ -104,6 +105,7 @@
 
 @media  (max-width: 800px){
     .header{
+        backdrop-filter: blur(10px);
         .nav{
             padding: 0 20px;
             .burger{

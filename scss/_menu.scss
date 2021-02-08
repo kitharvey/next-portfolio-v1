@@ -12,7 +12,7 @@
     clip-path: circle(0% at 100% -10%);
     transition: all .5s ease;
     &.open{
-        clip-path: circle(150% at 100% -10%);
+        clip-path: circle(200% at 100% -10%);
     }
 
     align-items: center;

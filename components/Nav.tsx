@@ -1,14 +1,25 @@
 import Link from 'next/link';
-import React, {useState} from 'react'
-
+import React, {useState,useEffect} from 'react'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 export default function Nav(){
-    const [ isOpen, setOpener ] = useState(false);
+    const [ isOpen, setOpener ] = useState<boolean>(false);
     
     const onClickHandler = (event: React.MouseEvent<HTMLAnchorElement | HTMLDivElement, MouseEvent>) => {
         event.preventDefault()
         setOpener(!isOpen)
     }
+
+
+
+
+    useEffect(() => {
+        if(isOpen) disableBodyScroll(document.body)
+        else enableBodyScroll(document.body)
+        return () => {
+            clearAllBodyScrollLocks()
+        }
+    }, [isOpen])
 
     return (
         <div className="header">
