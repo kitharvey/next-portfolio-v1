@@ -20,7 +20,7 @@
             svg{
                 width: 50px;
                 height: 33px;
-                fill: var(--a-color);
+                fill: $a-color;
             }
         }
         .theme{
@@ -54,7 +54,7 @@
                 top: 10px;
                 height: 3px;
                 width: 30px;
-                background: var(--a-color);
+                background: $a-color;
                 transition: all .25s ease;
 
                 &::before{
@@ -63,7 +63,7 @@
                     top: -10px;
                     height: 3px;
                     width: 30px;
-                    background: var(--a-color);
+                    background: $a-color;
                     transition: all .25s ease;
                 }
 
@@ -73,7 +73,7 @@
                     top: 10px;
                     height: 3px;
                     width: 30px;
-                    background: var(--a-color) ;
+                    background: $a-color;
                     transition: all .25s ease;
                 }
 

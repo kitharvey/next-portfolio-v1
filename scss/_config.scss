@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+@import 'variables';
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +12,15 @@
 
 
 
+
+
+
+
+
 body{
-    font-family: var(--default-font);
-    background: var(--bg-color);
-    color: var(--text-color);
+    font-family: $default-font;
+    background: $bg-color;
+    color: $text-color;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     transition: background .25s ease, color .5s ease;
@@ -28,8 +34,8 @@ body{
     --default-font: 'Roboto Condensed', sans-serif;
 
     .title-section{
-        font-family: var(--mono-font);
-        color: var(--a-color);
+        font-family: $mono-font;
+        color: $a-color;
         margin-bottom: 50px;
     }
     
@@ -39,12 +45,12 @@ body{
         color: currentColor;
         transition: all ease-in-out;
         &:hover{
-            color: var(--a-color);
+            color: $a-color;
         }
     }
 
     h1, h2{
-        color: var(--a-color);
+        color: $a-color;
     }
 
     .wrapper{
@@ -69,7 +75,7 @@ body{
                 justify-content: center;
                 font-size: small;
                 text-transform: none;
-                font-family: var(--mono-font);
+                font-family: $mono-font;
                 text-align: center;
             }
             .bottom{

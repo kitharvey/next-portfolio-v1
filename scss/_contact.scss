@@ -1,3 +1,4 @@
+
 #contact{
 
     .email{
@@ -36,7 +37,7 @@
         .sign-in-inputs{
             margin-top: 5px;
             width: inherit;
-            border: 1px solid var(--a-color);;
+            border: 1px solid $a-color;
             font-size: 14px;
             padding: 15px;
             outline: none;
@@ -45,10 +46,10 @@
             background: none;
             color: currentColor;
             border-radius: 5px;
-            box-shadow: 5px 5px 0px 0px var(--b-color);
+            box-shadow: 5px 5px 0px 0px $b-color;
             transition: all .15s ease-in-out;
             &:focus{
-                box-shadow: 0px 0px 0px 0px var(--b-color);
+                box-shadow: 0px 0px 0px 0px $b-color;
                 transform: translateX(5px) translateY(5px);
             }
     
@@ -93,16 +94,16 @@
                 border: none;
                 outline: none;
                 padding: 10px 30px;
-                font-family: var(--default-font);
+                font-family: $default-font;
                 font-weight: 400;
                 font-size: 1rem;
                 border-radius: 5px;
                 cursor: pointer;
-                background: var(--a-color);
-                box-shadow: 5px 5px 0px 0px var(--b-color);
+                background: $a-color;
+                box-shadow: 5px 5px 0px 0px $b-color;
                 transition: all .15s ease-in-out;
                 &:hover{
-                    box-shadow: 0px 0px 0px 0px var(--b-color);
+                    box-shadow: 0px 0px 0px 0px $b-color;
                     transform: translateX(5px) translateY(5px);
                 }
             }

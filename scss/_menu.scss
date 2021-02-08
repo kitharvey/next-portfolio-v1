@@ -7,7 +7,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: var(--bg-color);
+    background: $bg-color;
     position: fixed;
     clip-path: circle(0% at 100% -10%);
     transition: all .5s ease;
