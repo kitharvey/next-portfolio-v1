@@ -39,16 +39,16 @@ export default function Nav(){
                 </div>
 
                 <div className="web-menu">
-                    <div className="nav-items" onClick={onClickHandler}>
+                    <div className="nav-items" >
                         <Link href="/#home">Home</Link>
                     </div>
-                    <div className="nav-items" onClick={onClickHandler}>
+                    <div className="nav-items">
                         <Link href="/#projects">Projects</Link>
                     </div>
-                    <div className="nav-items" onClick={onClickHandler}>
+                    <div className="nav-items">
                         <Link href="/#about" >About</Link>
                     </div>
-                    <div className="nav-items" onClick={onClickHandler}>
+                    <div className="nav-items">
                         <Link href="/#contact" >Contact</Link>
                     </div>
                 </div>
