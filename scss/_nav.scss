@@ -1,13 +1,17 @@
 .header{
-    position: sticky;
-    padding: 10px 0;
+    position: fixed;
+    padding: 10px 50px;
     width: 100%;
     top: 0;
     min-height: 3rem;
     height: max-content;
     z-index: 10;
+    margin: 0 auto;
+    .active{
+        color: $a-color;
+    }
+
     .nav{
-        padding: 0 50px;
         width: inherit;
         display: flex;
         flex-direction: row;
@@ -105,7 +109,6 @@
 
 @media  (max-width: 800px){
     .header{
-        backdrop-filter: blur(10px);
         .nav{
             padding: 0 20px;
             .burger{

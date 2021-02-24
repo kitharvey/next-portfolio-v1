@@ -1,12 +1,10 @@
 .home-container{
-    width: 100%;
-    height: max-content;
     position: relative;
-
-    .avatar-container{
+    .avatar-wrapper{
         position: absolute;
-        right: 30%;
-        top: 30%;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -14,7 +12,6 @@
     
     .main-text{
         padding: 50px 0;
-        width: 50%;
         .des{
             font-size: 1.2rem;
         }
@@ -109,7 +106,6 @@
     min-height: 100vh;
     height: max-content;
     width: 100%;
-    padding: 0 20%;
     display: flex;
     align-items: flex-start;
     justify-content: center;

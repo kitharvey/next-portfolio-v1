@@ -11,7 +11,27 @@
 
 
 
+html{
+    scroll-behavior: smooth;
+}
 
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media screen and (min-width: 640px) {
+        max-width: 640px;
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+}
 
 
 
@@ -21,7 +41,6 @@ body{
     font-family: $default-font;
     background: $bg-color;
     color: $text-color;
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     transition: background .25s ease, color .5s ease;
     line-height: 1.25;
@@ -53,11 +72,6 @@ body{
         color: $a-color;
     }
 
-    .wrapper{
-        width: 100%;
-        scroll-behavior: smooth;
-    }
-
     footer{
         height: max-content;
         width: 100%;
@@ -85,8 +99,4 @@ body{
         }
     }
 
-
-    &::-webkit-scrollbar{
-        display: none;
-    }
 }

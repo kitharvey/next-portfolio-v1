@@ -9,15 +9,16 @@ import Contact from './Contact'
 export default function Portfolio() {
 
     return (
+        <>
+        <Nav/>
         <div className="wrapper" > 
-            <Nav/>
             <Home/>
             <Projects/>
             <About/>
             <Contact />
             <Footer />
         </div>
-        
+        </>
     )
     
 }
