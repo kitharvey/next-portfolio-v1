@@ -8,14 +8,30 @@
 }
 
 
-
-
-
-html{
+.scroll-it{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+
+    @media  (max-width: 800px){
+        flex-direction: column;
+    }
 }
 
 .wrapper{
+    min-width: 100%;
+    min-height: 100%;
+    display: inline-block;
+}
+
+
+.container{
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -32,7 +48,6 @@ html{
         max-width: 1280px;
     }
 }
-
 
 
 
@@ -73,6 +88,8 @@ body{
     }
 
     footer{
+        position: fixed;
+        bottom: 0;
         height: max-content;
         width: 100%;
         display: flex;
@@ -80,6 +97,11 @@ body{
         align-items: center;
         justify-content: center;
         margin-top: 100px;
+
+        @media  (max-width: 800px){
+            position: unset;
+        }
+
         .main-buttons{
             margin: 20px 0;
             p{

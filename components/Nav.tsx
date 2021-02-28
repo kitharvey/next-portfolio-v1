@@ -1,16 +1,14 @@
 import Link from 'next/link';
 import React, {useState,useEffect} from 'react'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import ActiveLink from './ActiveLink';
 
 export default function Nav(){
     const [ isOpen, setOpener ] = useState<boolean>(false);
-    
     const onClickHandler = (event: React.MouseEvent<HTMLAnchorElement | HTMLDivElement, MouseEvent>) => {
         event.preventDefault()
         setOpener(!isOpen)
     }
-
-
 
 
     useEffect(() => {
@@ -23,6 +21,7 @@ export default function Nav(){
 
     return (
         <div className="header">
+            <div className="container">
             <div className="nav">
                 <div className="logo">
                     <Link href="/" >
@@ -39,18 +38,18 @@ export default function Nav(){
                 </div>
 
                 <div className="web-menu">
-                    <div className="nav-items" >
-                        <Link href="/#home">Home</Link>
-                    </div>
-                    <div className="nav-items">
-                        <Link href="/#projects">Projects</Link>
-                    </div>
-                    <div className="nav-items">
-                        <Link href="/#about" >About</Link>
-                    </div>
-                    <div className="nav-items">
-                        <Link href="/#contact" >Contact</Link>
-                    </div>
+                    <ActiveLink activeClassName='active' href="/#home">
+                        <a className="nav-items">Home</a>
+                    </ActiveLink>
+                    <ActiveLink activeClassName='active' href="/#projects" >
+                        <a className="nav-items">Projects</a>
+                    </ActiveLink>
+                    <ActiveLink activeClassName='active' href="/#about">
+                        <a className="nav-items" >About</a>
+                    </ActiveLink>
+                    <ActiveLink activeClassName='active' href="/#contact">
+                        <a className="nav-items" >Contact</a>
+                    </ActiveLink>
                 </div>
 
                 <div className="burger " onClick={onClickHandler}>
@@ -73,7 +72,7 @@ export default function Nav(){
                         </div>
                     </div>                   
                 </div>
-                
+            </div>
             </div>
         </div>
 
