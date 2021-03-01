@@ -57,19 +57,19 @@ export default function Nav(){
                 </div>
 
                 <div className={`mobile-menu-container ${isOpen ? " open": ""}`} >
-                    <div className="menu">
-                        <div className="nav-items" onClick={onClickHandler}>
-                            <Link href="/home">Home</Link>
-                        </div>
-                        <div className="nav-items" onClick={onClickHandler}>
-                            <Link href="/projects">Projects</Link>
-                        </div>
-                        <div className="nav-items" onClick={onClickHandler}>
-                            <Link href="/about" >About</Link>
-                        </div>
-                        <div className="nav-items" onClick={onClickHandler}>
-                            <Link href="/contact" >Contact</Link>
-                        </div>
+                    <div className="menu" onClick={onClickHandler}>
+                        <ActiveLink activeClassName='active' href="/">
+                            <a className="nav-items" >Home</a>
+                        </ActiveLink>
+                        <ActiveLink activeClassName='active' href="/projects" >
+                            <a className="nav-items" >Projects</a>
+                        </ActiveLink>
+                        <ActiveLink activeClassName='active' href="/about">
+                            <a className="nav-items" >About</a>
+                        </ActiveLink>
+                        <ActiveLink activeClassName='active' href="/contact">
+                            <a className="nav-items" >Contact</a>
+                        </ActiveLink>
                     </div>                   
                 </div>
             </div>

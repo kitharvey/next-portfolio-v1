@@ -4,7 +4,6 @@ export default function About(){
 
     return (
                 <div id="page" className='about' >
-                    <p className="title-section">About Me</p>
                     <div className="about-container">
                         <div className="about-details">
                             <div className="overview">
@@ -21,9 +20,10 @@ export default function About(){
                                     <li>SCSS/Sass</li>
                                     <li>TypeScript</li>
                                     <li>TailwindCSS</li>
-                                    <li>React.js</li>
+                                    <li>ReactJS</li>
+                                    <li>NextJS</li>
                                     <li>GraphQL</li>
-                                    <li>Node.js</li>
+                                    <li>NodeJS</li>
                                     <li>Photoshop</li>
                                     <li>Illustrator</li>
                                     <li>Git</li>

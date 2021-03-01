@@ -8,7 +8,6 @@ import Recaptcha from 'react-google-recaptcha';
 const Contact: React.FC = () => {
         return (
                 <div id="page" className='contact' >
-                    <p className="title-section" >Contact</p>
                     <div className='contact-wrapper' >
                         <div className="accounts">
                             <p>Follow me on</p>

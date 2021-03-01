@@ -19,7 +19,7 @@ const ParticlesComponent = () => (
                     "number": {
                         "value": 200,
                         "density": {
-                            "enable": false
+                            "enable": true
                         }
                     },
                     "size": {
@@ -51,7 +51,7 @@ const ParticlesComponent = () => (
                             "mode": "connect"
                         },
                         "onclick": {
-                            "enable": true,
+                            "enable": false,
                             "mode": "push"
                         }
                     },

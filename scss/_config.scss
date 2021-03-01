@@ -48,14 +48,7 @@ body{
     -webkit-font-smoothing: antialiased;
     transition: background .25s ease, color .5s ease;
     line-height: 1.25;
-    --bg-color:  #14171A;
-    --bg-color-two:  #192734;
-    --text-color:  #ffffff;
-    --a-color: #1DA1F2;
-    --b-color: #1DA1F280;
-    --mono-font: 'Roboto Mono', monospace;
-    --default-font: 'Roboto Condensed', sans-serif;
-
+    overflow: hidden;
     .title-section{
         font-family: $mono-font;
         color: $a-color;

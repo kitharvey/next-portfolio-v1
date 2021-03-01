@@ -4,16 +4,28 @@ import '../scss/style.scss'
 import type { AppProps } from 'next/app'
 import Nav from '../components/Nav'
 import ParticlesComponent from '../components/ParticlesComponent'
+import { AnimatePresence, motion } from 'framer-motion'
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps, router }: AppProps) {
+
   return (
     <>
     <div className="wrapper">
         <Nav/>
         <ParticlesComponent />
-        <div className="container">
-          <Component {...pageProps} />
-        </div>
+        <AnimatePresence>
+          <div className="container" >
+            <motion.div
+              key={router.pathname}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              id="page-transition"
+            >
+              <Component {...pageProps} key={router.pathname} />
+            </motion.div>
+          </div>
+        </AnimatePresence>
     </div>
    
     </>
