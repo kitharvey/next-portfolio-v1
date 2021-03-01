@@ -42,8 +42,6 @@ const projects = [
 const Projects: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState<number | null>(null)
     return(
-        <div className="wrapper" id="projects">
-            <div className="container">
                 <div id="page">
                     <p className="title-section">Projects</p>
                     <div className="proj-wrapper">
@@ -77,8 +75,6 @@ const Projects: React.FC = () => {
 
                     </div>
                 </div>
-            </div>
-        </div>
       
     )
 }

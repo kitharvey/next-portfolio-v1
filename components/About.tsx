@@ -3,8 +3,6 @@ import React from 'react'
 export default function About(){
 
     return (
-        <div className="wrapper" id="about">
-            <div className="container">
                 <div id="page">
                     <p className="title-section">About Me</p>
                     <div className="about-container">
@@ -34,8 +32,6 @@ export default function About(){
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
        
     )
 }

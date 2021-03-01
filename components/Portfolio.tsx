@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Nav from './Nav'
+// import Nav from './Nav'
 import Home from './Home'
 import Projects from './Projects'
 import About from './About'
@@ -20,7 +20,6 @@ export default function Portfolio() {
 
     return (
         <>
-        <Nav/>
         <div className="scroll-it" ref={scrollRef} > 
             <Home/>
             <Projects/>

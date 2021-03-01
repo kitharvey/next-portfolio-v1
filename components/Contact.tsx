@@ -7,9 +7,7 @@ import Recaptcha from 'react-google-recaptcha';
 
 const Contact: React.FC = () => {
         return (
-            <div className="wrapper" id="contact">
-                <div className="container">
-                    <div id="page">
+                <div id="page">
                     <p className="title-section" >Contact</p>
                     <div className='contact-wrapper' >
                         <div className="accounts">
@@ -128,9 +126,7 @@ const Contact: React.FC = () => {
                         </Formik>
                         </div>
                     </div>
-                    </div>
                 </div>
-            </div>
            
         );
 }
