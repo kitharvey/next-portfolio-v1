@@ -1,6 +1,7 @@
-#home{
-    
+.home{
+   
     .main-text{
+        
         padding: 50px 0;
         .des{
             font-size: 1.2rem;
@@ -16,6 +17,7 @@
         height: max-content;
         
         .main-buttons{
+            
             cursor: pointer;
             margin-right: 20px;
             margin-top: 20px;
@@ -41,7 +43,7 @@
     }
 }
 
-#about{
+.about{
 
     .about-container{
         margin-top: 40px;
@@ -94,6 +96,7 @@
 
 #page{
     min-height: 100vh;
+    width: 100%;
     height: max-content;
     display: flex;
     align-items: flex-start;
@@ -102,7 +105,6 @@
 
     h1{
         font-size: 4rem;
-       
     }
 
 }

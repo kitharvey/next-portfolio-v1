@@ -7,34 +7,16 @@
     box-sizing: border-box;
 }
 
-// #tsparticles{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-// }
 
-.scroll-it{
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-    &::-webkit-scrollbar { 
-        display: none;  /* Safari and Chrome */
-    }
-
-    @media  (max-width: 800px){
-        flex-direction: column;
-    }
+#tsparticles{
+    height: 100vh;
+    width: 100%;
 }
 
 .wrapper{
     min-width: 100%;
     min-height: 100%;
-    position: relative;
+    position: absolute;
 }
 
 
@@ -92,6 +74,10 @@ body{
 
     h1, h2{
         color: $a-color;
+    }
+
+    p, h1, h2, a, form{
+        position: relative;
     }
 
     footer{

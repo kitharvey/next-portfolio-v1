@@ -42,7 +42,7 @@ const projects = [
 const Projects: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState<number | null>(null)
     return(
-                <div id="page">
+                <div id="page" className='projects' >
                     <p className="title-section">Projects</p>
                     <div className="proj-wrapper">
                         {projects.map( (project, index) => (

@@ -31,10 +31,14 @@ const ParticlesComponent = () => (
                         }
                     },
                     "line_linked": {
-                        "enable": false
+                        "enable": false,
+                        "distance": 100,
+                        "color": "#ffffff",
+                        "opacity": 0.2,
+                        "width": .25
                     },
                     "move": {
-                        "random": true,
+                        "random": false,
                         "speed": 1,
                         "direction": "bottom",
                         "out_mode": "out"
@@ -48,7 +52,7 @@ const ParticlesComponent = () => (
                         },
                         "onclick": {
                             "enable": true,
-                            "mode": "repulse"
+                            "mode": "push"
                         }
                     },
                     "modes": {
