@@ -20,9 +20,8 @@
             
             cursor: pointer;
             margin-right: 20px;
-            margin-top: 20px;
+            margin-top: 40px;
             transition: all .15s ease-in-out;
-            height: max-content;
             a{
                 color: #ffffff;
                 padding: 10px 20px;
@@ -102,7 +101,7 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-
+    padding: 20px;
     h1{
         font-size: 4rem;
     }
@@ -134,7 +133,7 @@
         }
     }
 
-    #home, #projects, #about, #contact{
+    .home, .projects, .about, .contact{
         padding: 0 20px;
         .proj-wrapper{
             width: 100%;
@@ -160,9 +159,6 @@
 
         .about-container{
             .about-details{
-                display: flex;
-                align-items: flex-start;
-                justify-content: center;
                 flex-direction: column;
                 .overview, .tools{
                     width: 100%;
