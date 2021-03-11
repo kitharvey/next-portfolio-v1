@@ -26,21 +26,21 @@ const ParticlesComponent = () => (
                         "value": 1,
                         "random": true,
                         "anim": {
-                            "speed": 4,
-                            "size_min": 0.3
+                            "speed": 10,
+                            "size_min": 0.1
                         }
                     },
                     "line_linked": {
                         "enable": false,
                         "distance": 100,
                         "color": "#ffffff",
-                        "opacity": 0.2,
-                        "width": .25
+                        "opacity": 0.1,
+                        "width": .1
                     },
                     "move": {
                         "random": false,
                         "speed": 1,
-                        "direction": "bottom",
+                        "direction": "none",
                         "out_mode": "out"
                     }
                 },

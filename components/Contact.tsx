@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                                             id = 'fromName'
                                             placeholder = 'Name *'
                                             style={{
-                                                borderColor: errors.fromName && touched.fromName ? 'tomato' : ' #999999'
+                                                borderColor: errors.fromName && touched.fromName ? '#1DA1F2' : ' #999999'
                                             }}
                                         />
                                         <div className="form-error" >
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                                             id = 'fromEmail'
                                             placeholder = 'Email *'
                                             style={{
-                                                borderColor: errors.fromEmail && touched.fromEmail ? 'tomato' : ' #999999'
+                                                borderColor: errors.fromEmail && touched.fromEmail ? '#1DA1F2' : ' #999999'
                                             }}
                                         />
                                         <div className="form-error" >
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
                                             id = 'fromMessage'
                                             placeholder = 'Message *'
                                             style={{
-                                                borderColor: errors.fromMessage && touched.fromMessage ? 'tomato' : ' #999999'
+                                                borderColor: errors.fromMessage && touched.fromMessage ? '#1DA1F2' : ' #999999'
                                             }}
                                         />
                                         <div className="form-error" >
