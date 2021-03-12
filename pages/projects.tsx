@@ -2,11 +2,7 @@ import React from 'react'
 import HeadTitle from '../components/HeadTitle';
 import Projects from '../components/Projects';
 
-interface projectsProps {
-
-}
-
-const projects: React.FC<projectsProps> = ({}) => {
+const projects = () => {
         return (
             <>
                 <HeadTitle title='Projects' />

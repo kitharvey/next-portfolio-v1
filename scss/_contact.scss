@@ -65,6 +65,7 @@
         width: 100%;
 
         .sign-in-inputs{
+            background: $bg-color;
             margin-top: 5px;
             width: inherit;
             border: 1px solid $a-color;
@@ -73,7 +74,6 @@
             outline: none;
             font-family: 'Roboto', sans-serif;
             font-weight: 500;
-            background: none;
             color: currentColor;
             border-radius: 5px;
             box-shadow: 5px 5px 0px 0px $b-color;

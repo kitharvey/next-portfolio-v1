@@ -2,11 +2,8 @@ import React from 'react'
 import About from '../components/About';
 import HeadTitle from '../components/HeadTitle';
 
-interface aboutProps {
 
-}
-
-const about: React.FC<aboutProps> = ({}) => {
+const about = () => {
         return (
             <>
                 <HeadTitle title='About' />
