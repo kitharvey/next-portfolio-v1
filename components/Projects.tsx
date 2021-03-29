@@ -11,7 +11,7 @@ const projects = [
                 "framer-motion",
                 "react-query"],
         repo: 'https://github.com/kitharvey/poke-decks',
-        demo: 'https://pokedecks.kitharvey.vercel.app/',
+        demo: 'https://poke-decks.vercel.app/',
         gif: '/pokemon.gif',
         gifPause: './pokemon-pause.gif'
     },
