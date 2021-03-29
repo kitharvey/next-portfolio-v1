@@ -10,7 +10,7 @@ const projects = [
                 "pokéapi",
                 "framer-motion",
                 "react-query"],
-        repo: 'https://github.com/kitharvey/poke-decks',
+        repo: 'https://github.com/kitharvey/pokedecks',
         demo: 'https://poke-decks.vercel.app/',
         gif: '/pokemon.gif',
         gifPause: './pokemon-pause.gif'
