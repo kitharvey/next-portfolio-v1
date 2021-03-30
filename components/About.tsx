@@ -24,6 +24,8 @@ export default function About(){
                                     <li>NextJS</li>
                                     <li>GraphQL</li>
                                     <li>NodeJS</li>
+                                    <li>ExpressJS</li>
+                                    <li>MongoDB</li>
                                     <li>Photoshop</li>
                                     <li>Illustrator</li>
                                     <li>Git</li>

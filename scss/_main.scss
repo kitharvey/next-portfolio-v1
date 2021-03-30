@@ -58,11 +58,11 @@
         .about-details{
             display: flex;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: row;
 
             .overview, .tools{
-                width: 50%;
+                width: 40%;
 
                 .overview-text{
                     text-transform: none;

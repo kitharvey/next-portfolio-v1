@@ -3,34 +3,40 @@ import React, {useState} from 'react'
 const projects = [
     {
         title: 'Pokédecks',
-        description: 'A pokédex in card style. Swipe through random pokemon cards and view their stats, bio and information.',
+        description: "A pokédex in card style. Swipe through random pokemon cards or guess who's that pokemon.",
         tools: ["reactjs",
                 "typescript",
                 "tailwindcss",
                 "pokéapi",
                 "framer-motion",
-                "react-query"],
+                "react-query",
+                "nodejs",
+                "express",
+                "mongodb",
+                "firebase-auth"
+            ],
         repo: 'https://github.com/kitharvey/pokedecks',
         demo: 'https://poke-decks.vercel.app/',
         gif: '/pokemon.gif',
-        gifPause: './pokemon-pause.gif'
+        gifPause: '/pokemon-pause.gif'
     },
     {
         title: 'Shtonks',
         description: 'Financial Modeling Prep Clone but Discounted. Shows stocks lastest news and latest prices.',
         tools: [
             "nextjs",
+            "reactjs",
             "typescript",
             "tailwindcss",
             "swr",
             "framer-motion",
             "highcharts",
-            "fmp-api",
+            "financialmodelingprep-api",
             ],
         repo: 'https://github.com/kitharvey/shtonks',
         demo: 'https://shtonks.vercel.app/',
         gif: '/shtonks.gif',
-        gifPause: './shtonks-pause.gif'
+        gifPause: '/shtonks-pause.gif'
     },
 ]
 
