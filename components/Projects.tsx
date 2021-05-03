@@ -2,30 +2,27 @@ import React, {useState} from 'react'
 
 const projects = [
     {
-        title: 'Pokédecks',
-        description: "A pokédex in card style. Swipe through random pokemon cards or guess who's that pokemon.",
-        tools: ["reactjs",
+        title: 'Pokénex',
+        description: "Pokédex app in card style. Swipe through pokémon cards or guess who's that pokémon?",
+        tools: ["nextjs",
                 "typescript",
-                "tailwindcss",
+                "sass",
                 "pokéapi",
                 "framer-motion",
-                "react-query",
-                "nodejs",
-                "express",
+                "redux-toolkit",
                 "mongodb",
-                "firebase-auth"
+                "next-auth"
             ],
-        repo: 'https://github.com/kitharvey/pokedecks',
-        demo: 'https://poke-decks.vercel.app/',
-        gif: '/pokemon.gif',
-        gifPause: '/pokemon-pause.gif'
+        repo: 'https://github.com/kitharvey/pokenex',
+        demo: 'https://pokenex.vercel.app/',
+        gif: '/pokenex.gif',
+        gifPause: '/pokenex-pause.gif'
     },
     {
         title: 'Shtonks',
         description: 'Financial Modeling Prep Clone but Discounted. Shows stocks lastest news and latest prices.',
         tools: [
             "nextjs",
-            "reactjs",
             "typescript",
             "tailwindcss",
             "swr",

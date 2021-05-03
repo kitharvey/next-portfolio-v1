@@ -5,7 +5,7 @@ interface HeadTitleProps {
     title: string
 }
 
-const metaIMG = "/icon.png"
+const metaIMG = "/port.gif"
 const metaDescription = "I'm a self-taught front-end developer. I help clients and companies build their web user interfaces using ReactJS, NextJS, TypeScript and Sass."
 
 const HeadTitle: React.FC<HeadTitleProps> = ({title}) => {
