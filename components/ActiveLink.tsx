@@ -1,22 +1,20 @@
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-import React, { Children } from 'react'
+import { useRouter } from "next/router"
+import Link from "next/link"
+import React, { Children } from "react"
 
-interface ActiveLinkProps{
-    children: JSX.Element
-    activeClassName: string
-    href: string
+interface ActiveLinkProps {
+  children: JSX.Element
+  activeClassName: string
+  href: string
 }
 
 const ActiveLink: React.FC<ActiveLinkProps> = ({ children, activeClassName, ...props }) => {
   const { asPath } = useRouter()
   const child = Children.only(children)
-  const childClassName = child.props.className || ''
+  const childClassName = child.props.className || ""
 
   const className =
-    asPath === props.href
-      ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName
+    asPath === props.href ? `${childClassName} ${activeClassName}`.trim() : childClassName
 
   return (
     <Link {...props}>

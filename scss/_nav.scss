@@ -1,123 +1,113 @@
-.header{
-    position: fixed;
-    top: 0;
-    padding: 10px 0;
-    width: 100%;
-    min-height: 3rem;
-    height: max-content;
-    z-index: 10;
-    margin: 0 auto;
-    .active{
-        color: $a-color;
+.header {
+  position: fixed;
+  top: 0;
+  padding: 10px 0;
+  width: 100%;
+  min-height: 3rem;
+  height: max-content;
+  z-index: 10;
+  margin: 0 auto;
+  .active {
+    color: $a-color;
+  }
+
+  .nav {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      cursor: pointer;
+      margin-right: auto;
+      z-index: 2;
+      svg {
+        width: 50px;
+        height: 33px;
+        fill: $a-color;
+      }
+    }
+    .theme {
+      margin-right: 30px;
+      font-size: 2rem;
     }
 
-    .nav{
-        width: inherit;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        
-        .logo{
-            cursor: pointer;
-            margin-right: auto;
-            z-index: 2;
-            svg{
-                width: 50px;
-                height: 33px;
-                fill: $a-color;
-            }
+    .web-menu {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 1rem;
+      font-weight: 700;
+
+      .nav-items {
+        margin-left: 20px;
+      }
+    }
+
+    .burger {
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      display: none;
+
+      .line {
+        position: absolute;
+        top: 10px;
+        height: 3px;
+        width: 30px;
+        background: $a-color;
+        transition: all 0.25s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -10px;
+          height: 3px;
+          width: 30px;
+          background: $a-color;
+          transition: all 0.25s ease;
         }
-        .theme{
-            margin-right: 30px;
-            font-size: 2rem;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          height: 3px;
+          width: 30px;
+          background: $a-color;
+          transition: all 0.25s ease;
         }
 
-        .web-menu{
-            width: 25%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            font-size: 1rem;
-            font-weight: 700;
+        &.open {
+          transform: rotate(180deg);
+          background: transparent;
 
-            .nav-items{
-                margin-left: 20px;
-            }
+          &::before {
+            transform: rotate(45deg) translate(8px, 6px);
+          }
+          &::after {
+            transform: rotate(-45deg) translate(8px, -6px);
+          }
         }
-
-        .burger{
-            z-index: 2;
-            width: 30px;
-            height: 30px;
-            position: relative;
-            cursor: pointer;
-            display: none;
-            
-            .line{
-                position: absolute;
-                top: 10px;
-                height: 3px;
-                width: 30px;
-                background: $a-color;
-                transition: all .25s ease;
-
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: -10px;
-                    height: 3px;
-                    width: 30px;
-                    background: $a-color;
-                    transition: all .25s ease;
-                }
-
-                &::after{
-                    content: "";
-                    position: absolute;
-                    top: 10px;
-                    height: 3px;
-                    width: 30px;
-                    background: $a-color;
-                    transition: all .25s ease;
-                }
-
-                &.open{
-                    transform: rotate(180deg);
-                    background: transparent;
-  
-                    
-                    &::before{
-                        transform: rotate(45deg) translate(8px, 6px);
-  
-       
-                    }
-                    &::after{
-                        transform: rotate(-45deg) translate(8px, -6px);
-
-
-                    }
-                }
-                
-
-            }
-        }
-            
-
-    } 
+      }
+    }
+  }
 }
 
-
-@media  (max-width: 800px){
-    .header{
-        .nav{
-            padding: 0 20px;
-            .burger{
-                display: inline;
-            }
-            .web-menu{
-                display: none;
-            }
-        }
+@media (max-width: 800px) {
+  .header {
+    .nav {
+      padding: 0 20px;
+      .burger {
+        display: inline;
+      }
+      .web-menu {
+        display: none;
+      }
     }
+  }
 }

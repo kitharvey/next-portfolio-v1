@@ -1,110 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
-@import 'variables';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+#tsparticles {
+  height: 100vh;
+  width: 100%;
+}
 
-#tsparticles{
-    height: 100vh;
+.wrapper {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  @media screen and (min-width: 640px) {
+    max-width: 640px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+}
+
+body {
+  font-family: $default-font;
+  background: $bg-color;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.25;
+  overflow-x: hidden;
+  width: 100%;
+  .title-section {
+    font-family: $mono-font;
+    color: $a-color;
+    margin-bottom: 50px;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: currentColor;
+    transition: all ease-in-out;
+    &:hover {
+      color: $a-color;
+    }
+  }
+
+  h1,
+  h2 {
+    color: $a-color;
+  }
+
+  p,
+  h1,
+  h2,
+  a,
+  form,
+  ul {
+    position: relative;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    height: max-content;
     width: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
 
-.wrapper{
-    min-width: 100%;
-    min-height: 100vh;
-    position: absolute;
-}
-
-
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding:0 25px;
-    @media screen and (min-width: 640px) {
-        max-width: 640px;
-    }
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-    }
-    @media screen and (min-width: 1024px) {
-        max-width: 1024px;
-    }
-    @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-    }
-}
-
-
-
-
-body{
-    font-family: $default-font;
-    background: $bg-color;
-    color: $text-color;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.25;
-    overflow-x: hidden;
-    width: 100%;
-    .title-section{
-        font-family: $mono-font;
-        color: $a-color;
-        margin-bottom: 50px;
-    }
-    
-    a{
-        cursor: pointer;
-        text-decoration: none;
-        color: currentColor;
-        transition: all ease-in-out;
-        &:hover{
-            color: $a-color;
-        }
+    @media (max-width: 800px) {
+      position: unset;
     }
 
-    h1, h2{
-        color: $a-color;
-    }
-
-    p, h1, h2, a, form, ul{
-        position: relative;
-    }
-
-    footer{
-        position: fixed;
-        bottom: 0;
-        height: max-content;
-        width: 100%;
+    .main-buttons {
+      margin: 20px 0;
+      p {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
-
-        @media  (max-width: 800px){
-            position: unset;
-        }
-
-        .main-buttons{
-            margin: 20px 0;
-            p{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-size: small;
-                text-transform: none;
-                font-family: $mono-font;
-                text-align: center;
-            }
-            .bottom{
-                margin-top: 10px;
-                text-align: center;
-            }
-        }
+        font-size: small;
+        text-transform: none;
+        font-family: $mono-font;
+        text-align: center;
+      }
+      .bottom {
+        margin-top: 10px;
+        text-align: center;
+      }
     }
-
+  }
 }

@@ -1,10 +1,11 @@
-import HeadTitle from '../components/HeadTitle'
-import Home from '../components/Home'
+import HeadTitle from "../components/HeadTitle"
+import Home from "../components/Home"
+
 const IndexPage = () => (
-    <>
-      <HeadTitle title='Kit Harvey' />
-      <Home/>
-    </>
+  <>
+    <HeadTitle title="Kit Harvey" />
+    <Home />
+  </>
 )
 
 export default IndexPage

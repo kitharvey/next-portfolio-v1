@@ -1,183 +1,172 @@
-.home{
-   
-    .main-text{
-        
-        padding: 50px 0;
-        .des{
-            font-size: 1.2rem;
-        }
+.home {
+  .main-text {
+    padding: 50px 0;
+    .des {
+      font-size: 1.2rem;
     }
+  }
 
-    .main-buttons-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 100%;
-        height: max-content;
-        
-        .main-buttons{
-            
-            cursor: pointer;
-            margin-right: 20px;
-            margin-top: 40px;
-            transition: all .15s ease-in-out;
-            a{
-                color: #ffffff;
-                padding: 10px 20px;
-                border-radius: 5px;
-                background: $a-color;
-                transition: all .15s ease-in-out;
-                box-shadow: 5px 5px 0px 0px $b-color;
-            }
-            &:hover{
-                transform: translateX(5px) translateY(5px);
-                a{
-                    color: #ffffff;
-                    box-shadow: 0px 0px 0px 0px $b-color;
-                }
-            }
-        }
-
-    }
-}
-
-.about{
-
-    .about-container{
-        margin-top: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        img{
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        .about-details{
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex-direction: row;
-
-            .overview, .tools{
-                width: 40%;
-
-                .overview-text{
-                    text-transform: none;
-                    line-height: 1.6;
-                    font-size: 1.2rem;
-                }
-            }
-
-            .tools{
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                flex-direction: column;
-
-                ul{
-                    list-style: none;
-                    text-align: left;
-                    li{
-                        text-align: right;
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
-        
-    }
-
-}
-
-
-#page{
-    min-height: 100vh;
+  .main-buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     width: 100%;
     height: max-content;
+
+    .main-buttons {
+      cursor: pointer;
+      margin-right: 20px;
+      margin-top: 40px;
+      transition: all 0.15s ease-in-out;
+      a {
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: $a-color;
+        transition: all 0.15s ease-in-out;
+        box-shadow: 5px 5px 0px 0px $b-color;
+      }
+      &:hover {
+        transform: translateX(5px) translateY(5px);
+        a {
+          color: #ffffff;
+          box-shadow: 0px 0px 0px 0px $b-color;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .about-container {
+    margin-top: 40px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
-    h1{
-        font-size: 4rem;
+    img {
+      height: 150px;
+      border-radius: 50%;
     }
 
+    .about-details {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .overview,
+      .tools {
+        width: 40%;
+
+        .overview-text {
+          text-transform: none;
+          line-height: 1.6;
+          font-size: 1.2rem;
+        }
+      }
+
+      .tools {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+
+        ul {
+          list-style: none;
+          text-align: left;
+          li {
+            text-align: right;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
+#page {
+  min-height: 100vh;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  h1 {
+    font-size: 4rem;
+  }
+}
 
 @keyframes fadeIn {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-@media  (max-width: 800px){
-    .home-container{   
-        .avatar-container{
-            display: none;
-        }
+@media (max-width: 800px) {
+  .home-container {
+    .avatar-container {
+      display: none;
     }
-    
-    #home{
-    
-        .main-text{
+  }
+
+  #home {
+    .main-text {
+      width: 100%;
+    }
+  }
+
+  .home,
+  .projects,
+  .about,
+  .contact {
+    padding: 0 20px;
+    .proj-wrapper {
+      width: 100%;
+
+      .proj {
+        height: max-content;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0;
+        .details {
+          width: 100%;
+        }
+        .video-container {
+          width: 100%;
+          video {
             width: 100%;
+          }
         }
+      }
     }
 
-    .home, .projects, .about, .contact{
-        padding: 0 20px;
-        .proj-wrapper{
-            width: 100%;
-
-            .proj{
-                height: max-content;
-                align-items: flex-start;
-                flex-direction: column;
-                padding: 0;
-                .details{
-                    width: 100%;
-                }
-                .video-container{
-                    width: 100%;
-                    video{
-                        width: 100%;
-                    }
-                }
-
-            }
+    .about-container {
+      .about-details {
+        flex-direction: column;
+        .overview,
+        .tools {
+          width: 100%;
         }
-
-
-        .about-container{
-            .about-details{
-                flex-direction: column;
-                .overview, .tools{
-                    width: 100%;
-                }
-            }
-        }
-        h1{
-            font-size: 2rem;
-        }
-    
-        p{
-            text-transform: none;
-            font-size: 1rem;
-        }
-
-        .uppercase-text{
-            text-transform: uppercase;
-        }
-        
+      }
     }
-    
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      text-transform: none;
+      font-size: 1rem;
+    }
+
+    .uppercase-text {
+      text-transform: uppercase;
+    }
+  }
 }
