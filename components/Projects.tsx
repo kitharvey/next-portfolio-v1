@@ -87,20 +87,19 @@ const Projects: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className='other-projects' >
-          <h3>Other Projects:</h3>
-          <span>
-            <a href="https://www.frontendmentor.io/profile/kitharvey" target="__blank">
-              Frontend Mentor Submissions
-            </a>
-          </span>
-          <span>
-            <a href="https://unswish.vercel.app/" target="__blank">
-              Unswish
-            </a>
-          </span>
+      <div className="other-projects">
+        <h3>Other Projects:</h3>
+        <span>
+          <a href="https://www.frontendmentor.io/profile/kitharvey" target="__blank">
+            Frontend Mentor Submissions
+          </a>
+        </span>
+        <span>
+          <a href="https://unswish.vercel.app/" target="__blank">
+            Unswish
+          </a>
+        </span>
       </div>
-
     </div>
   )
 }
