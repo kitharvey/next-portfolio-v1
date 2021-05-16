@@ -1,4 +1,14 @@
 .projects {
+
+  .other-projects{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    span{
+      margin-left: 10px;
+    }
+  }
+
   .proj-wrapper {
     width: 100%;
     display: grid;
@@ -33,7 +43,6 @@
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-
           p {
             margin-right: 10px;
             font-family: $mono-font;

@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
                 )
             }}
           >
-            {({ errors, touched, setFieldValue }) => (
+            {({ errors, touched, setFieldValue, isSubmitting }) => (
               <div className="sign-in-form-main">
                 <Form className="contact-form-container" id="contact-form">
                   <label htmlFor="fromName">Name:</label>
@@ -135,6 +135,7 @@ const Contact: React.FC = () => {
                     <button className="sign-in-submit" type="submit">
                       Send
                     </button>
+                    <p>{isSubmitting}</p>
                   </div>
                 </Form>
               </div>
