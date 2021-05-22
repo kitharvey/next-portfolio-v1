@@ -3,8 +3,9 @@
     margin-top: 40px;
     display: flex;
     align-items: center;
-    span {
-      margin-left: 10px;
+    flex-wrap: wrap;
+    span, h3 {
+      margin-right: 10px;
     }
   }
 
