@@ -6,7 +6,7 @@ import ActiveLink from "./ActiveLink"
 export default function Nav() {
   const [isOpen, setOpener] = useState<boolean>(false)
   const onClickHandler = (
-    event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>
+    event: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement, MouseEvent>
   ) => {
     event.preventDefault()
     setOpener(!isOpen)
@@ -66,12 +66,24 @@ export default function Nav() {
             </ActiveLink>
           </div>
 
-          <button className="burger " type="button" onClick={onClickHandler}>
+          <div
+            role="button"
+            tabIndex={0}
+            aria-hidden="true"
+            className="burger "
+            onClick={onClickHandler}
+          >
             <span className={`line ${isOpen ? " open" : ""}`} />
-          </button>
+          </div>
 
           <div className={`mobile-menu-container ${isOpen ? " open" : ""}`}>
-            <button className="menu" type="button" onClick={onClickHandler}>
+            <div
+              role="button"
+              tabIndex={0}
+              aria-hidden="true"
+              className="menu"
+              onClick={onClickHandler}
+            >
               <ActiveLink activeClassName="active" href="/">
                 <a className="nav-items">Home</a>
               </ActiveLink>
@@ -84,7 +96,7 @@ export default function Nav() {
               <ActiveLink activeClassName="active" href="/contact">
                 <a className="nav-items">Contact</a>
               </ActiveLink>
-            </button>
+            </div>
           </div>
         </div>
       </div>
