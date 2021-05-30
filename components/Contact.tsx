@@ -55,10 +55,10 @@ const Contact: React.FC = () => {
             onSubmit={(_values, { setSubmitting, resetForm, setFieldValue }) => {
               emailjs
                 .sendForm(
-                  "service_brvh3kh",
-                  "template_7k881xs",
+                  `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+                  `${process.env.NEXT_PUBLIC_TEMPLATE_ID}`,
                   "contact-form",
-                  "user_avuoOUOCaAy7kZB3KZqmb"
+                  `${process.env.NEXT_PUBLIC_USER_ID}`
                 )
                 .then(
                   () => {
@@ -66,11 +66,14 @@ const Contact: React.FC = () => {
                     setFieldValue("success", true)
                     resetForm()
                   },
-                  () => {
+                  (error) => {
                     setSubmitting(false)
                     setFieldValue("success", false)
+                    alert(`Something went wrong, please try again! ${error.text}`)
                   }
                 )
+
+              alert("successfully sent an email.")
             }}
           >
             {({ errors, touched, setFieldValue, isSubmitting }) => (
@@ -124,7 +127,7 @@ const Contact: React.FC = () => {
                   <FastField
                     className="recaptcha"
                     component={Recaptcha}
-                    sitekey="6Le0lzsaAAAAAKwnM9LPSUAbMluQyKR7C5qIyu1q"
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
                     name="recaptcha"
                     onChange={(value: string) => setFieldValue("recaptcha", value)}
                   />

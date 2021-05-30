@@ -44,6 +44,7 @@ module.exports = {
           'import/no-cycle': ['error', { maxDepth: '∞' }],
           "jsx-a11y/label-has-associated-control": "off",
           "no-underscore-dangle": "off",
+          "no-alert": "off",
         },
       },
     ],
