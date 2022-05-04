@@ -20,24 +20,6 @@ const projects = [
     gif: "/pokenex.gif",
     gifPause: "/pokenex-pause.gif",
   },
-  {
-    title: "Shtonks",
-    description:
-      "Financial Modeling Prep Clone but Discounted. Shows stocks lastest news and latest prices.",
-    tools: [
-      "nextjs",
-      "typescript",
-      "tailwindcss",
-      "swr",
-      "framer-motion",
-      "highcharts",
-      "financialmodelingprep-api",
-    ],
-    repo: "https://github.com/kitharvey/shtonks",
-    demo: "https://shtonks.vercel.app/",
-    gif: "/shtonks.gif",
-    gifPause: "/shtonks-pause.gif",
-  },
 ]
 
 const Projects: React.FC = () => {
@@ -59,13 +41,13 @@ const Projects: React.FC = () => {
               <div className="subtitles">
                 <p className="description">{project.description}</p>
               </div>
-              <div className="tools">
+              <ul className="tools">
                 {project.tools.map((tool) => (
-                  <p key={tool} className="description">
-                    {tool}
-                  </p>
+                  <li key={tool}>
+                    <p className="description">{tool}</p>
+                  </li>
                 ))}
-              </div>
+              </ul>
               <div className="subtitles">
                 <a className="link" href={project.repo} target="__blank">
                   {" "}

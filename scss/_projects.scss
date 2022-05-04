@@ -13,7 +13,6 @@
   .proj-wrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     .proj {
       margin-top: 10px;
@@ -47,7 +46,7 @@
           p {
             margin-right: 10px;
             font-family: $mono-font;
-            font-weight: 100;
+            font-weight: 300;
             font-size: 0.8rem;
           }
         }
@@ -59,7 +58,7 @@
           .description {
             margin-right: 15px;
             text-transform: none;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 1rem;
             font-weight: 400;
           }

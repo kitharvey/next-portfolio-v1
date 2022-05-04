@@ -3,7 +3,7 @@ import Home from "../components/Home"
 
 const IndexPage = () => (
   <>
-    <HeadTitle title="Kit Harvey" />
+    <HeadTitle title="Portfolio" />
     <Home />
   </>
 )

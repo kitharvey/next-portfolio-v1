@@ -26,7 +26,7 @@
   .email {
     margin-top: 30px;
     a {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1.2rem;
     }
   }
@@ -43,7 +43,7 @@
     .links {
       a {
         margin-right: 20px;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.2rem;
       }
     }
@@ -70,7 +70,7 @@
       padding: 15px;
       outline: none;
       font-family: "Roboto", sans-serif;
-      font-weight: 500;
+      font-weight: 400;
       color: currentColor;
       border-radius: 5px;
       box-shadow: 5px 5px 0px 0px $b-color;
@@ -82,10 +82,10 @@
       }
 
       &::placeholder {
-        font-weight: medium;
+        font-weight: 400;
       }
       &:placeholder-shown {
-        font-weight: medium;
+        font-weight: 400;
       }
     }
     .recaptcha {
@@ -97,7 +97,7 @@
 
     .form-error {
       margin: 5px 0;
-      font-weight: normal;
+      font-weight: 400;
       color: tomato;
       font-size: 12px;
       height: 16px;
