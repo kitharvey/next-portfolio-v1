@@ -1,11 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 
 const experiences = [
   {
+    company: "CAMBIATA MUSIC",
+    title: "Web developer",
+    date: "JUNE 2022 - PRESENT",
+  },
+  {
     company: "YES WE VIBE",
     title: "UI DEVELOPER",
     date: "MAY 2021 - MAY 2022",
-    description: [
+    descriptions: [
       "Developed UI using jQuery, CSS, HTML and PHP.",
       "Created Email HTML and edited Wordpress UI.",
       "Collaborated with UI designers using Adobe XD.",
@@ -15,7 +21,7 @@ const experiences = [
     company: "SPONSORLYTIX",
     title: "FRONT-END DEVELOPER",
     date: "JULY 2020 - OCTOBER 2020",
-    description: [
+    descriptions: [
       "Developed front-end using React.js and SCSS.",
       "Created and customized charts using chart libraries (Google Charts, ChartJS, Recharts, Apexcharts).",
       "Collaborated with UI/UX designers using Figma. Wrote organized and efficient code.",
@@ -47,13 +53,13 @@ export default function About() {
           <div className="overview">
             <h1>Overview</h1>
             <p className="overview-text">
-              Hi, I`m a Front-End Developer based in General Santos City, Philippines. I`m always
+              Hi, I'm a Front-End Developer based in General Santos City, Philippines. I'm always
               fascinated by graphic design, typography and algorithms. Front-End development has
-              given me the ability to do both design and code. I was hooked and I want to master
+              given me the ability to do both design and code. I was hooked and I wanted to master
               this craft. My dream is to work with like-minded and passionate people building
-              amazing projects. When I`m away from my keyboard you can find me at the gym pumping
-              irons, running and spending time with friends and family. I also love learning
-              self-improvement, philosophy, finance and health and fitness. There is always room to
+              projects. When I'm away from my keyboard you can find me at the gym pumping irons,
+              running and spending time with friends and family. I also love learning
+              self-improvement, philosophy, finance, health and fitness. There is always room to
               grow.
             </p>
           </div>
@@ -68,11 +74,12 @@ export default function About() {
                       <span>{exp.title}</span>&nbsp;&#64;&nbsp;{exp.company}
                     </p>
                     <ul>
-                      {exp.description.map((descrip) => (
-                        <li key={descrip}>
-                          <p>&#8226;&nbsp;{descrip}</p>
-                        </li>
-                      ))}
+                      {exp.descriptions &&
+                        exp.descriptions.map((description) => (
+                          <li key={description}>
+                            <p>&#8226;&nbsp;{description}</p>
+                          </li>
+                        ))}
                     </ul>
                   </div>
                 )

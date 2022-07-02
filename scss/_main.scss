@@ -82,10 +82,12 @@
               font-family: $mono-font;
               color: $text-color-two;
               line-height: 1;
+              text-transform: uppercase;
             }
             .company {
               font-weight: 400;
               font-size: 1.4rem;
+              text-transform: uppercase;
             }
 
             ul {

@@ -55,6 +55,7 @@ body {
     text-decoration: none;
     color: currentColor;
     transition: all ease-in-out;
+    line-height: 1;
     &:hover {
       color: $a-color;
     }
